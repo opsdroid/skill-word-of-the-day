@@ -19,8 +19,13 @@ async def get_feed():
 
 
 @match_regex(r'.*word of the day.*')
-@match_crontab('30 09 * * *')
+@match_crontab('30 09 * * 1-5')
 async def word_of_the_day(opsdroid, config, message):
+    if message is None:
+        message = Message("",
+                          None,
+                          config.get("room", opsdroid.default_connector.default_room),
+                          opsdroid.default_connector)
     intro = random.choice([
         "Here's today's word of the day",
         "Here's the OED word of the day",
