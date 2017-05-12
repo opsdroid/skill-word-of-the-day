@@ -1,6 +1,6 @@
-# opsdroid skill hello
+# opsdroid skill word of the day
 
-A skill for [opsdroid](https://github.com/opsdroid/opsdroid) to respond to hello and goodbye messages.
+A skill for [opsdroid](https://github.com/opsdroid/opsdroid) to tell you the [word of the day](http://www.oed.com/) from Oxford English Dictionary.
 
 ## Requirements
 
@@ -12,21 +12,20 @@ None.
 
 ## Usage
 
-#### `hello`
+#### `what's the word of the day?`
 
-Says hello to the user.
+Get the word of the day. This runs automatically at 09:30.
 
-> user: hello
+> user: what's the word of the day?
 >
-> opsdroid: Hi user
-
-#### `goodbye`
-
-Says goodbye to the user.
-
-> user: bye
+> opsdroid:
+> 
+> Word of the day
+> oecumene | ecumene, n.
 >
-> opsdroid: Bye user
+> The inhabited or civilized world, spec. that known to the ancient Greeks
+>
+> http://www.oed.com/view/Entry/130500
 
 ## License
 
