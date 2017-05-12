@@ -36,5 +36,5 @@ async def word_of_the_day(opsdroid, config, message):
     word = feed["entries"][0]["title"]
     link = feed["entries"][0]["link"]
     definition = ".".join(feed["entries"][0]["summary"].split(".")[1:]).strip()
-    response = "{}\n> {}\n> {}\n> {}".format(intro, word, definition, link)
+    response = "{}\n> *{}*\n> {}\n> {}".format(intro, word, definition, link)
     await message.respond(response)
