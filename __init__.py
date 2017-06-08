@@ -5,6 +5,7 @@ import aiohttp
 import feedparser
 
 from opsdroid.matchers import match_regex, match_crontab
+from opsdroid.message import Message
 
 
 _LOGGER = logging.getLogger(__name__)
