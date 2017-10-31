@@ -26,7 +26,3 @@ Get the word of the day. This runs automatically at 09:30.
 > The inhabited or civilized world, spec. that known to the ancient Greeks
 >
 > http://www.oed.com/view/Entry/130500
-
-## License
-
-GNU General Public License Version 3 (GPLv3)
